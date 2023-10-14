@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcf_chat", "wcf_chat\wcf_chat.csproj", "{FDB0A654-CE40-4E16-9320-4ED0D638B461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatHost", "ChatHost\ChatHost.csproj", "{5AE337AA-9317-43C6-A9B3-26F202C050B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient\ChatClient.csproj", "{963F9ACC-DD2C-4B96-8754-F8B18176A39E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDB0A654-CE40-4E16-9320-4ED0D638B461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB0A654-CE40-4E16-9320-4ED0D638B461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB0A654-CE40-4E16-9320-4ED0D638B461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB0A654-CE40-4E16-9320-4ED0D638B461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE337AA-9317-43C6-A9B3-26F202C050B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE337AA-9317-43C6-A9B3-26F202C050B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE337AA-9317-43C6-A9B3-26F202C050B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE337AA-9317-43C6-A9B3-26F202C050B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963F9ACC-DD2C-4B96-8754-F8B18176A39E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963F9ACC-DD2C-4B96-8754-F8B18176A39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963F9ACC-DD2C-4B96-8754-F8B18176A39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963F9ACC-DD2C-4B96-8754-F8B18176A39E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A2067EB-194B-4323-AAE3-02C4AFEB15CD}
+	EndGlobalSection
+EndGlobal
