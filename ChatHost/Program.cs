@@ -14,7 +14,7 @@ namespace MessengerHost
             using (var host = new ServiceHost(typeof(wcf_chat.ServiceChat)))
             {
                 host.Open();
-                Console.WriteLine("Host working.");
+                Console.WriteLine("Host working...");
                 Console.ReadLine();
             }
         }

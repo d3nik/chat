@@ -16,9 +16,6 @@ using ChatClient.ServiceChat;
 
 namespace ChatClient
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window, IServiceChatCallback
     {
         bool isConnected = false;
@@ -40,8 +37,9 @@ namespace ChatClient
             {
                 client = new ServiceChatClient(new System.ServiceModel.InstanceContext(this));
                 ID = client.Connect(tbUserName.Text);
+
                 tbUserName.IsEnabled = false;
-                btnConDiscon.Content = "Disconnect";
+                btnConDiscon.Content = "Sign out";
                 isConnected = true;
             }
         }
@@ -53,7 +51,7 @@ namespace ChatClient
                 client.Disconnect(ID);
                 client = null;
                 tbUserName.IsEnabled = true;
-                btnConDiscon.Content = "Connect";
+                btnConDiscon.Content = "Sign in";
                 isConnected = false;
             }
         }
@@ -90,6 +88,28 @@ namespace ChatClient
                     client.SendMsg(tbMessage.Text, ID);
                     tbMessage.Text = string.Empty;
                 }
+            }
+        }
+
+        private void dragWindow(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                DragMove();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void closeWindow(object sender, RoutedEventArgs e) => this.Close();
+
+        private void window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Escape)
+            {
+                this.Close();
             }
         }
     }
